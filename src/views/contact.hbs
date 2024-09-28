@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+
+        .header h1 {
+            color: #000;
+            font-size: 18px;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+
+        .text {
+            font-size: 14px;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Someone tried to contact you via adutem innovation website!</h1>
+        </div>
+        <div class="content">
+            {{#with body}}
+            <p class="text" style="margin: 8px 0x; padding: 0px;">Name: <strong>{{fullName}}</strong></p>
+            <p class="text" style="margin: 8px 0x; padding: 0px;">Email: <strong>{{email}}</strong></p>
+            {{#if phoneNumber}}
+            <p class="text" style="margin: 8px 0x; padding: 0px;">Phone Number: {{phoneNumber}}</p>
+            {{/if}}
+            {{#if organization}}
+            <p class="text" style="margin: 8px 0x; padding: 0px;">Phone Organization: {{organization}}</p>
+            {{/if}}
+            {{#if message}}
+            <p class="text" style="margin: 8px 0x; padding: 0px;">Message: {{message}}</p>
+            {{/if}}
+            {{/with}}
+        </div>
+
+</body>
+
+</html>

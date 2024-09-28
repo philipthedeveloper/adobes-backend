@@ -1,0 +1,128 @@
+<html>
+
+  <head>
+    <style>
+      body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin:
+      0; padding: 0; } .container { max-width: 600px; margin: 0 auto;
+      background-color: #ffffff; } .header h1 { color: #000; font-size: 25px;
+      margin: 0; margin-bottom: 15px; } .text { font-size: 14px; color: #000; }
+      ul { padding-left: 20px; } ul li { list-style-type: disc; } h2
+      {color:#d31010; margin-top: 28px; margin-bottom: 13px;}
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Hi Adobes.👋 New Survey Submitted</h1>
+      </div>
+      <div class="content">
+        {{#with body}}
+          {{! Basic Information }}
+          <h2>Basic Information</h2>
+          <p class="text" style="margin: 8px 0px; padding: 0px;">Name:
+            <strong>{{name}}</strong></p>
+          <p class="text" style="margin: 8px 0px; padding: 0px;">Company Name:
+            <strong>{{companyName}}</strong></p>
+          <p class="text" style="margin: 8px 0px; padding: 0px;">Email Address:
+            <strong>{{emailAddress}}</strong></p>
+          <p class="text" style="margin: 8px 0px; padding: 0px;">Phone Number:
+            {{phoneNumber}}</p>
+          <p class="text" style="margin: 8px 0px; padding: 0px;">Website:
+            <strong>{{website}}</strong></p>
+
+          <!-- Business Information -->
+          <h2>Business Information</h2>
+          <p class="text" style="margin: 8px 0px; padding: 0px;">Business
+            Industry:
+            <strong>{{businessIndustry}}</strong></p>
+          <p class="text" style="margin: 8px 0px; padding: 0px;">Operating
+            Years:
+            <strong>{{operatingYears}}</strong></p>
+          <p class="text" style="margin: 8px 0px; padding: 0px;">Company Size:
+            <strong>{{companySize}}</strong></p>
+
+          <!-- Marketing and Lead Generation Needs -->
+          <h2>Marketing and Lead Generation Needs</h2>
+          <p class="text" style="margin: 8px 0px; padding: 0px;">Primary Goals:</p>
+          <ul>
+            {{#each primaryGoals}}
+              <li>{{this}}</li>
+            {{/each}}
+          </ul>
+
+          <p class="text" style="margin: 8px 0px; padding: 0px;">Satisfied with
+            Current Strategy:
+            <strong>{{satisfiedWithCurrentStrategy}}</strong></p>
+          <p class="text" style="margin: 8px 0px; padding: 0px;">Area of
+            Improvement:
+            <strong>{{areaOfImprovement}}</strong></p>
+
+          <p class="text" style="margin: 8px 0px; padding: 0px;">Current
+            Marketing Channels:</p>
+          <ul>
+            {{#each currentMarketingChannels}}
+              <li>{{this}}</li>
+            {{/each}}
+          </ul>
+
+          <p class="text" style="margin: 8px 0px; padding: 0px;">Monthly
+            Marketing Budget:
+            <strong>{{monthlyMarketingBudget}}</strong></p>
+          <p class="text" style="margin: 8px 0px; padding: 0px;">Have In-House
+            Marketing Team:
+            <strong>{{haveInhouseMarketingTeam}}</strong></p>
+          <p class="text" style="margin: 8px 0px; padding: 0px;">Marketing Team
+            Members:
+            <strong>{{marketingTeamMembers}}</strong></p>
+
+          <!-- Current Marketing Performance -->
+          <h2>Current Marketing Performance</h2>
+          <p class="text" style="margin: 8px 0px; padding: 0px;">Average Monthly
+            Lead Generation:
+            <strong>{{averageMonthlyLeadGeneration}}</strong></p>
+          <p class="text" style="margin: 8px 0px; padding: 0px;">Current
+            Conversion Rate:
+            <strong>{{currentConversionRate}}</strong></p>
+
+          <p class="text" style="margin: 8px 0px; padding: 0px;">Biggest Lead
+            Generation Challenge:</p>
+          <ul>
+            {{#each biggestLeadGenerationChallenge}}
+              <li>{{this}}</li>
+            {{/each}}
+          </ul>
+
+          <!-- Challenges and Goals -->
+          <h2>Challenges and Goals</h2>
+          <p class="text" style="margin: 8px 0px; padding: 0px;">Biggest
+            Challenge in Marketing:
+            <strong>{{biggestChallengeInMarketing}}</strong></p>
+          <p class="text" style="margin: 8px 0px; padding: 0px;">Specific Goals:
+            <strong>{{specificGoals}}</strong></p>
+
+          <!-- Decision Making Process -->
+          <h2>Decision Making Process</h2>
+          <p class="text" style="margin: 8px 0px; padding: 0px;">Is Decision
+            Maker:
+            <strong>{{isDecisionMaker}}</strong></p>
+          <p class="text" style="margin: 8px 0px; padding: 0px;">Other Entities
+            Involved:
+            <strong>{{otherEntitiesInvolved}}</strong></p>
+
+          <!-- Timeline -->
+          <h2>Timeline</h2>
+          <p class="text" style="margin: 8px 0px; padding: 0px;">Timeline:
+            <strong>{{timeline}}</strong></p>
+
+          <!-- Additional Information -->
+          <h2>Additional Information</h2>
+          <p class="text" style="margin: 8px 0px; padding: 0px;">Additional
+            Information:
+            <strong>{{additionalInformation}}</strong></p>
+        {{/with}}
+      </div>
+    </div>
+  </body>
+
+</html>
